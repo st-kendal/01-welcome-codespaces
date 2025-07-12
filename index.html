@@ -2,59 +2,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Give Clean Water Today</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charity:Water</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Avenir&display=swap" rel="stylesheet" />
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top cream banner -->
-  <header class="header cream-banner">
-    <div class="logo">
-      <img src="water-can-transparent.png" alt="Charity:Water Logo"/>
+
+  <!-- Header -->
+  <header>
+    <div class="nav">
+      <a href="/" class="logo">Charity:Water</a>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#">Take Action</a>
+        <a href="#">Why Water?</a>
+        <a href="#">About Us</a>
+        <a href="#">Give H2O</a>
+      </nav>
     </div>
-    <nav class="nav-links">
-      <a href="#">Take Action</a>
-      <a href="#">Why Water?</a>
-      <a href="#">About Us</a>
-      <a href="#">Give H2O</a>
-    </nav>
   </header>
 
-  <!-- Hero section -->
+  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
       <h1>Turn Passion into Action — Give Clean Water Today.</h1>
       <p>
-        Go beyond protests: join a global movement fighting climate injustice by funding sustainable water projects. With charity: water’s 100% Model, every dollar you give directly changes lives — and you’ll see the impact yourself.
+        Go beyond protests; join a global movement fighting climate injustice by funding sustainable water projects.
+        With charity: water’s 100% Model, every dollar you give directly changes lives — and you’ll see the impact yourself.
       </p>
 
-      <div class="donation-buttons">
-        <button>$5</button>
-        <button>$10</button>
-        <button>$20</button>
-        <button>$30</button>
-        <button>$50</button>
-        <button>$100</button>
+      <div class="donation-box">
+        <p>Choose Amount to Donate</p>
+        <div class="buttons" role="group" aria-label="Donation amount options">
+          <button type="button">$5.00</button>
+          <button type="button">$10.00</button>
+          <button type="button">$20.00</button>
+          <button type="button">$30.00</button>
+          <button type="button">$50.00</button>
+          <button type="button">$100.00</button>
+        </div>
+        <a href="#" class="donation-link">Other Donation Options</a>
       </div>
-
-      <a href="#" class="other-options">Other Donation Options</a>
     </div>
 
     <div class="hero-image">
-      <img src="https://cdn2.dropmarkusercontent.com/52043/7ae98bbb0d5a96ca35297379fee6e2dc240ed2dba200e517568b0b6985985974/Madagascar_2019_CG-2726.jpg?Expires=1751842174&Signature=KYb18CahsHFnOSp3rtoexa8cpS~WlFUk7uo7C52KsW0eSKaUVyk0MeqkgFEq5Bub8u9F3NmPT45CgjiIm4mu2fkc6VWs0bzdPmfF0AVTDGkcdJs6XbJRU-Y~EBkTtphaQDwvzI3aKg-xdcBWwB-DgbPBDa~mjyyU9JzEHXCdBd5kbwTIITLM192uKMfQ57eTyRQcAgB1jyDlTyrv~DsWWov9Gpv2be3teAY5gMqb-WSH5W6aeH5Y~qoAQbnpTNSLyfiCScCZGjvhhnAOkO8Hps0dJ5tsCRScHWkY4BMmmtHhBtZYBcMjVkzOZcudbe~rOq4sZyYf3dZR-GfyBB8blA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ" alt="Madagascar clean water project"/>
+      <img src="https://cdn2.dropmarkusercontent.com/52043/7ae98bbb0d5a96ca35297379fee6e2dc240ed2dba200e517568b0b6985985974/preview/Madagascar_2019_CG-2726.jpg?Expires=1752267737&Signature=fhJPsZ8ddfrQrWP~0amkYfPczZI1Zp8E~0kujdl9NU~9k2c3tJ4qPXzFBrXuM4~lgHMSWfr48uTq0EnLhfOgPozan45nELW7L0l6jJUcKXDJyOMfDDHNN7NXT7fAXUGUs5nkepP1RtkUPE7mgapcDS4ZL0cjV8dVEBHnb9LuRldWb4e~PDId~mxcgLVRFp1YoTQCS0Ywmr7B07QuFnAh4K2i2bsUkvDZkIzZespFLscURbZoFqFDbXNZ7KC3xeSPRX3tqBtZbq047IQO~TmMkawpoblTVED1VQtz3xC1ZlGVHsxn~52x~kp6NZdg8msUszLUDjIR35WY8nMTOCo5dw__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ"
+        alt="Smiling girl drinking clean water in Madagascar" />
     </div>
   </section>
 
-  <!-- Trust section -->
-  <section class="trust-section">
-    <h2>Your Donations Are Safe</h2>
-    <p>With charity: water’s 100% Model, every penny you give goes directly to clean water projects. Our books are open, and we track every dollar so you see exactly how your gift makes a difference.</p>
-  </section>
-
-  <!-- Bottom cream banner -->
-  <footer class="footer cream-banner">
-    <p>© 2025 Charity:Water. All rights reserved.</p>
+  <!-- Footer -->
+  <footer>
+    <p>
+      Join a global movement fighting climate injustice through clean water — with charity: water’s unique 100% Model,
+      every dollar you give directly funds sustainable water projects, and you’ll get real-time updates showing the lives you’re changing.
+      Take action today and help communities on the frontlines of climate change get the clean water they urgently need.
+    </p>
   </footer>
+
 </body>
 </html>
