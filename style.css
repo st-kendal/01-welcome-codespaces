@@ -1,182 +1,138 @@
-/* Base Styles */
 body {
   margin: 0;
-  font-family: 'Proxima Nova', 'Avenir', sans-serif;
-  background-color: #ffffff;
+  font-family: sans-serif;
+  background-color: #fff7e1;
   color: #333;
 }
 
-/* ===== Top Banner ===== */
-.top-banner {
-  background-color: #2E9DF7;
-  color: white;
-  padding: 15px 40px;
+/* Cream banners for header & footer */
+.cream-banner {
+  background-color: #fff7e1;
+}
+
+/* Header styles */
+.header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.logo-container {
-  display: flex;
   align-items: center;
+  padding: 1rem 2rem;
 }
 
-.logo-container img {
-  height: 30px;
-  margin-right: 10px;
-}
-
-.brand-name {
-  font-weight: bold;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-.main-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 30px;
-  font-size: 14px;
-  font-weight: 500;
-  transition: color 0.2s ease;
-}
-
-.main-nav a:hover {
-  color: #FF902A; /* Orange hover */
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  background-color: #2E9DF7;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 60px 40px;
-}
-
-.hero-text {
-  flex: 1;
-  max-width: 600px;
-}
-
-/* Inline logo and heading */
-.hero-heading-with-logo {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.hero-heading-with-logo img.inline-logo {
+.logo img {
   height: 40px;
-  margin-right: 15px;
+  width: auto;
 }
 
-.hero-heading-with-logo h1 {
-  font-size: 28px;
-  margin: 0;
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.hero p {
-  font-size: 16px;
-  margin-bottom: 20px;
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
 
-/* Donation Buttons */
+/* Hero section split 50/50 */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: #94bfc5;
+  padding: 3rem 1.5rem;
+  gap: 2rem;
+}
+
+/* Hero text: left half */
+.hero-text {
+  flex: 1 1 50%;
+  min-width: 280px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  color: #f0f0f0;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
 .donation-buttons {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .donation-buttons button {
-  background-color: white;
-  color: #2E9DF7;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px 10px 10px 0;
-  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #000;
+  background-color: #fff;
   cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  border-radius: 4px;
+  font-size: 1rem;
 }
 
 .donation-buttons button:hover {
-  background-color: #8BD1CB; /* Light Blue */
+  background-color: #f0f0f0;
 }
 
-.donation-buttons a {
-  display: block;
-  color: white;
-  font-size: 14px;
+.other-options {
+  display: inline-block;
+  color: #000;
   text-decoration: underline;
-  margin-top: 10px;
+  font-size: 0.95rem;
 }
 
-/* ===== Hero Image ===== */
+/* Hero image: right half */
 .hero-image {
-  flex: 1;
+  flex: 1 1 50%;
+  min-width: 280px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 40px;
+  justify-content: center;
 }
 
 .hero-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* ===== Safe Section ===== */
-.safe-section {
+/* Trust section */
+.trust-section {
+  background-color: #fff7e1;
   text-align: center;
-  padding: 60px 20px;
-  background-color: #f6f9fc;
+  padding: 3rem 1.5rem;
 }
 
-.safe-section h2 {
-  color: #2E9DF7;
-  font-size: 24px;
-  margin-bottom: 20px;
+.trust-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
-.safe-section p {
+.trust-section p {
   max-width: 600px;
   margin: 0 auto;
-  font-size: 16px;
-  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .hero-image {
-    padding-left: 0;
-    margin-top: 20px;
-  }
-
-  .main-nav {
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
-  }
-
-  .main-nav a {
-    margin: 10px;
-    display: inline-block;
-  }
-
-  .hero-heading-with-logo {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .hero-heading-with-logo img.inline-logo {
-    margin-bottom: 10px;
-  }
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
