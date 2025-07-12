@@ -1,22 +1,58 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Student Welcome</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity:Water</title>
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Avenir&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome, Student!</h1>
-    <form id="nameForm">
-      <input type="text" id="studentName" placeholder="Enter your name" required>
-      <button type="submit">Continue</button>
-    </form>
-    <div id="greeting" class="hidden"></div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-  <script src="script.js"></script>
+  <header>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3048/3048390.png" alt="Charity:Water Logo">
+      <span>Charity:Water Logo</span>
+    </div>
+    <nav>
+      <a href="#">Take Action</a>
+      <a href="#">Why Water?</a>
+      <a href="#">About Us</a>
+      <a href="#">Give H2O</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Turn Passion into Action — Give Clean Water Today.</h1>
+      <p>
+        Go beyond protests: join a global movement fighting climate injustice
+        by funding sustainable water projects. With charity: water’s 100% Model,
+        every dollar you give directly changes lives — and you’ll see the impact yourself.
+      </p>
+      <div class="donation-buttons">
+        <button>$5</button>
+        <button>$10</button>
+        <button>$20</button>
+        <button>$30</button>
+        <button>$50</button>
+        <button>$100</button>
+        <a href="#">Other Donation Options</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn2.dropmarkusercontent.com/52043/7ae98bbb0d5a96ca35297379fee6e2dc240ed2dba200e517568b0b6985985974/preview/Madagascar_2019_CG-2726.jpg?Expires=1752359421&Signature=OQuJ0pBNouYdLfnHS0eyCAS8CLXw664EYNhOyMskKMWhS3fSq4FxqZHozKaWAaPbxp-~9RdqQ5TFkduTJs2L~uV917QR7o4--5K8nCNO77IALrt2JR6k4f5Fx3mS7FO49AI8Pzu-umeYjJLyYNPvGgSUYuRTB~s381izud4Tl5vGrdkmkIwPMjCY9tSpq2oIW6hNwDs-x9QWBTh~wz3-hQpVkWc4Q-cMfx3rpty1vKDB7pHOIdSXAGejq5QL-QNKp2VL3oZZkx8wxPpIrGI8K6lofwlPan2tOBL0huB0mF5d4reZfi7COgoQOUaiMbxb73IKOgLca0GQTfuKF6hnOA__&Key-Pair-Id=APKAITQYWVEN757ZA4KQ" alt="Girl drinking clean water">
+    </div>
+  </section>
+
+  <section class="safe-section">
+    <h2>Your Donations Are Safe</h2>
+    <p>
+      With charity: water’s 100% Model, every penny you give goes directly to
+      clean water projects. Our books are open, and we track every dollar so
+      you see exactly how your gift makes a difference.
+    </p>
+  </section>
 </body>
 </html>
