@@ -1,4 +1,4 @@
-/* Fonts and Base Setup */
+/* Base Styles */
 body {
   margin: 0;
   font-family: 'Proxima Nova', 'Avenir', sans-serif;
@@ -8,7 +8,7 @@ body {
 
 /* ===== Top Banner ===== */
 .top-banner {
-  background-color: #2E9DF7; /* Primary Blue */
+  background-color: #2E9DF7;
   color: white;
   padding: 15px 40px;
   display: flex;
@@ -23,14 +23,13 @@ body {
 }
 
 .logo-container img {
-  height: 30px; /* Small logo */
+  height: 30px;
   margin-right: 10px;
 }
 
 .brand-name {
   font-weight: bold;
   font-size: 18px;
-  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
@@ -40,21 +39,20 @@ body {
   margin-left: 30px;
   font-size: 14px;
   font-weight: 500;
-  transition: all 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .main-nav a:hover {
-  color: #FF902A; /* Orange hover effect */
-  text-decoration: underline;
+  color: #FF902A; /* Orange hover */
 }
 
 /* ===== Hero Section ===== */
 .hero {
   background-color: #2E9DF7;
+  color: white;
   display: flex;
   flex-wrap: wrap;
   padding: 60px 40px;
-  color: white;
 }
 
 .hero-text {
@@ -62,9 +60,21 @@ body {
   max-width: 600px;
 }
 
-.hero h1 {
-  font-size: 32px;
+/* Inline logo and heading */
+.hero-heading-with-logo {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.hero-heading-with-logo img.inline-logo {
+  height: 40px;
+  margin-right: 15px;
+}
+
+.hero-heading-with-logo h1 {
+  font-size: 28px;
+  margin: 0;
 }
 
 .hero p {
@@ -72,12 +82,19 @@ body {
   margin-bottom: 20px;
 }
 
+/* Donation Buttons */
+.donation-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .donation-buttons button {
   background-color: white;
   color: #2E9DF7;
   border: none;
   padding: 10px 20px;
-  margin: 5px 5px 10px 0;
+  margin: 5px 10px 10px 0;
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
@@ -131,7 +148,7 @@ body {
   color: #333;
 }
 
-/* ===== Responsive Fixes ===== */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -152,5 +169,14 @@ body {
   .main-nav a {
     margin: 10px;
     display: inline-block;
+  }
+
+  .hero-heading-with-logo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-heading-with-logo img.inline-logo {
+    margin-bottom: 10px;
   }
 }
